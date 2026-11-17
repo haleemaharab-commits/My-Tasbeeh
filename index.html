@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tasbeeh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <video class="background-video" autoplay muted loop playsinline>
+        <source src="background.mp4" type="video/mp4">
+    </video>
+
+    <main class="container">
+
+        <h1>Digital Tasbeeh</h1>
+        <p class="subtitle">A Moment of Peace & Remembrance</p>
+
+        <div class="tasbeeh-box">
+
+            <p class="daily-label">DAILY REMEMBRANCE</p>
+
+            <h2 id="arabic">سُبْحَانَ اللّٰهِ</h2>
+
+            <p id="zikr-name">SubhanAllah</p>
+
+            <div class="counter" id="display">00</div>
+
+            <p class="target">Target: 33</p>
+
+            <div class="progress">
+                <div id="progress-bar"></div>
+            </div>
+
+            <button id="count-btn" onclick="increaseCount()">
+                COUNT
+            </button>
+
+            <button class="reset-btn" onclick="resetCount()">
+                RESET
+            </button>
+            <button class="music-btn" onclick="toggleMusic()">
+    🎵 MUSIC ON / OFF
+</button>
+
+<audio id="bgMusic" loop>
+    <source src="background.mp3" type="audio/mpeg">
+</audio>
+
+            <p id="message">Begin your remembrance</p>
+
+        </div>
+
+        <p class="footer">Remember Allah, Find Peace.</p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
